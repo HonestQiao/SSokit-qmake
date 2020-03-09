@@ -80,6 +80,9 @@ QtObject {
     property var sendBuf1: qsTr("Buf1")
     property var sendBuf2: qsTr("Buf2")
     property var sendBuf3: qsTr("Buf3")
+    property var sendBuf4: qsTr("Buf4")
+    property var sendBuf5: qsTr("Buf5")
+    property var sendBuf6: qsTr("Buf6")
     property var sendAdvance: qsTr("Advance")
 
     //ServerControlView

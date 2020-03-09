@@ -267,7 +267,7 @@ Column {
     }
 
     function appendHistoryConnect(msg){
-        historyConnect.append({time:(new Date().toLocaleString(Qt.locale("de_DE"),"yyyy-MM-dd hh:mm:ss")),addr:msg})
+        historyConnect.append({time:(new Date().toLocaleString(Qt.locale("zh_CN"),"yyyy-MM-dd hh:mm:ss")),addr:msg})
         connectState(historyConnect.count>0&&toggleConnect.checked)
     }
 

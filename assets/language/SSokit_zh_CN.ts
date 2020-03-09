@@ -302,8 +302,23 @@
     <message>
         <location filename="Strings.qml" line="82"/>
         <source>Buf3</source>
-        <translation>数据3</translation>
+        <translation>数据6</translation>
     </message>
+    <message>
+    <location filename="Strings.qml" line="80"/>
+    <source>Buf4</source>
+    <translation>数据3</translation>
+</message>
+<message>
+    <location filename="Strings.qml" line="81"/>
+    <source>Buf5</source>
+    <translation>数据4</translation>
+</message>
+<message>
+    <location filename="Strings.qml" line="82"/>
+    <source>Buf6</source>
+    <translation>数据5</translation>
+</message>
     <message>
         <location filename="Strings.qml" line="83"/>
         <source>Advance</source>

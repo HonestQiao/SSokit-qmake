@@ -74,6 +74,9 @@ bool TransferForm::initForm()
 	bindBuffer(1, m_ui.edtBuf1, m_ui.btnSend1, m_ui.cmbDir1);
 	bindBuffer(2, m_ui.edtBuf2, m_ui.btnSend2, m_ui.cmbDir2);
 	bindBuffer(3, m_ui.edtBuf3, m_ui.btnSend3, m_ui.cmbDir3);
+	bindBuffer(4, m_ui.edtBuf4, m_ui.btnSend4, 0);
+	bindBuffer(5, m_ui.edtBuf5, m_ui.btnSend5, 0);
+	bindBuffer(6, m_ui.edtBuf6, m_ui.btnSend6, 0);
 
 	bindSelect(m_ui.cmbDir1, -1, Qt::Key_F5);
 	bindSelect(m_ui.cmbDir2, -1, Qt::Key_F6);

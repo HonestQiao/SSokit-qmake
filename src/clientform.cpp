@@ -32,6 +32,9 @@ bool ClientForm::initForm()
 	bindBuffer(1, m_ui.edtBuf1, m_ui.btnSend1, 0);
 	bindBuffer(2, m_ui.edtBuf2, m_ui.btnSend2, 0);
 	bindBuffer(3, m_ui.edtBuf3, m_ui.btnSend3, 0);
+	bindBuffer(4, m_ui.edtBuf4, m_ui.btnSend4, 0);
+	bindBuffer(5, m_ui.edtBuf5, m_ui.btnSend5, 0);
+	bindBuffer(6, m_ui.edtBuf6, m_ui.btnSend6, 0);
 
 	connect(m_ui.btnTcp, SIGNAL(clicked(bool)), this, SLOT(trigger(bool)));
 	connect(m_ui.btnUdp, SIGNAL(clicked(bool)), this, SLOT(trigger(bool)));

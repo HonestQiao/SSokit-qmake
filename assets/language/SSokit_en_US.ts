@@ -290,8 +290,23 @@
     <message>
         <location filename="Strings.qml" line="82"/>
         <source>Buf3</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Buf6</translation>
     </message>
+    <message>
+    <location filename="Strings.qml" line="80"/>
+    <source>Buf4</source>
+    <translation type="unfinished">Buf3</translation>
+</message>
+<message>
+    <location filename="Strings.qml" line="81"/>
+    <source>Buf5</source>
+    <translation type="unfinished">Buf4</translation>
+</message>
+<message>
+    <location filename="Strings.qml" line="82"/>
+    <source>Buf6</source>
+    <translation type="unfinished">Buf5</translation>
+</message>
     <message>
         <location filename="Strings.qml" line="83"/>
         <source>Advance</source>

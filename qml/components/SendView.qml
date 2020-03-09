@@ -53,11 +53,11 @@ GroupBox{
             anchors.right: parent.right
             RowLayout{
                 Layout.fillWidth: true
-                Layout.preferredHeight: 30
+                Layout.preferredHeight: 29
                 Label{
                     Layout.preferredWidth: 50
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
                     text: Strings.sendBuf1
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -66,7 +66,7 @@ GroupBox{
                     id:buffer1
                     Layout.fillWidth: true
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
                     background: Rectangle {
                         color: buffer1.enabled ? "transparent" : "#00ffffff"
                         border.color: buffer1.enabled ? "#bdbdbd" : "#bdbdbd"
@@ -105,11 +105,11 @@ GroupBox{
             }
             RowLayout{
                 Layout.fillWidth: true
-                Layout.preferredHeight: 30
+                Layout.preferredHeight: 29
                 Label{
                     Layout.preferredWidth: 50
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
                     text: Strings.sendBuf2
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -118,7 +118,7 @@ GroupBox{
                     id:buffer2
                     Layout.fillWidth: true
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
                     background: Rectangle {
                         color: buffer2.enabled ? "transparent" : "transparent"
                         border.color: buffer2.enabled ? "#bdbdbd" : "#bdbdbd"
@@ -158,11 +158,170 @@ GroupBox{
             }
             RowLayout{
                 Layout.fillWidth: true
-                Layout.preferredHeight: 30
+                Layout.preferredHeight: 29
                 Label{
                     Layout.preferredWidth: 50
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
+                    text: Strings.sendBuf4
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                }
+                TextField{
+                    id:buffer4
+                    Layout.fillWidth: true
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
+                    background: Rectangle {
+                        color: buffer4.enabled ? "transparent" : "transparent"
+                        border.color: buffer4.enabled ? "#bdbdbd" : "#bdbdbd"
+                        radius: 3
+                    }
+                }
+                Image {
+                    Layout.preferredHeight: 15
+                    Layout.preferredWidth: 15
+                    Layout.fillHeight: false
+                    Layout.fillWidth: false
+                    Layout.alignment: Qt.AlignHCenter
+                    source: "qrc:/assets/images/ic_clear.png"
+                    TapHandler{
+                        onTapped: buffer4.clear()
+                    }
+                     visible: SettingTool.getShowSendClear()
+                }
+                Button{
+                    enabled: canSendMsg
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight:false
+                    Layout.preferredHeight: 25
+                    text: Strings.send
+                    background: Rectangle{
+                        border.color: enabled?"#37474f":"#cfd8dc"
+                        color: "transparent"
+                        border.width: 1
+                        radius: parent.height/2
+                    }
+                    onClicked: {
+                        sendMessageData.setPlainText(false)
+
+                        sendMessage(buffer4.text)
+                    }
+                }
+            }
+            RowLayout{
+                Layout.fillWidth: true
+                Layout.preferredHeight: 29
+                Label{
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
+                    text: Strings.sendBuf5
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                }
+                TextField{
+                    id:buffer5
+                    Layout.fillWidth: true
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
+                    background: Rectangle {
+                        color: buffer5.enabled ? "transparent" : "transparent"
+                        border.color: buffer5.enabled ? "#bdbdbd" : "#bdbdbd"
+                        radius: 3
+                    }
+                }
+                Image {
+                    Layout.preferredHeight: 15
+                    Layout.preferredWidth: 15
+                    Layout.fillHeight: false
+                    Layout.fillWidth: false
+                    Layout.alignment: Qt.AlignHCenter
+                    source: "qrc:/assets/images/ic_clear.png"
+                    TapHandler{
+                        onTapped: buffer5.clear()
+                    }
+                     visible: SettingTool.getShowSendClear()
+                }
+                Button{
+                    enabled: canSendMsg
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight:false
+                    Layout.preferredHeight: 25
+                    text: Strings.send
+                    background: Rectangle{
+                        border.color: enabled?"#37474f":"#cfd8dc"
+                        color: "transparent"
+                        border.width: 1
+                        radius: parent.height/2
+                    }
+                    onClicked: {
+                        sendMessageData.setPlainText(false)
+
+                        sendMessage(buffer5.text)
+                    }
+                }
+            }
+            RowLayout{
+                Layout.fillWidth: true
+                Layout.preferredHeight: 29
+                Label{
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
+                    text: Strings.sendBuf6
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                }
+                TextField{
+                    id:buffer6
+                    Layout.fillWidth: true
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
+                    background: Rectangle {
+                        color: buffer6.enabled ? "transparent" : "transparent"
+                        border.color: buffer6.enabled ? "#bdbdbd" : "#bdbdbd"
+                        radius: 3
+                    }
+                }
+                Image {
+                    Layout.preferredHeight: 15
+                    Layout.preferredWidth: 15
+                    Layout.fillHeight: false
+                    Layout.fillWidth: false
+                    Layout.alignment: Qt.AlignHCenter
+                    source: "qrc:/assets/images/ic_clear.png"
+                    TapHandler{
+                        onTapped: buffer6.clear()
+                    }
+                     visible: SettingTool.getShowSendClear()
+                }
+                Button{
+                    enabled: canSendMsg
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight:false
+                    Layout.preferredHeight: 25
+                    text: Strings.send
+                    background: Rectangle{
+                        border.color: enabled?"#37474f":"#cfd8dc"
+                        color: "transparent"
+                        border.width: 1
+                        radius: parent.height/2
+                    }
+                    onClicked: {
+                        sendMessageData.setPlainText(false)
+
+                        sendMessage(buffer6.text)
+                    }
+                }
+            }
+            RowLayout{
+                Layout.fillWidth: true
+                Layout.preferredHeight: 29
+                Label{
+                    Layout.preferredWidth: 50
+                    Layout.fillHeight: false
+                    Layout.preferredHeight: 29
                     text: Strings.sendBuf3
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -171,7 +330,7 @@ GroupBox{
                     id:buffer3
                     Layout.fillWidth: true
                     Layout.fillHeight: false
-                    Layout.preferredHeight: 30
+                    Layout.preferredHeight: 29
                     placeholderText: "该行内容为纯文本发送"
                     background: Rectangle {
                         color: buffer3.enabled ? "transparent" : "transparent"
